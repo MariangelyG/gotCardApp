@@ -1,0 +1,25 @@
+*{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+background-image: url(/src/assets/wallpapersden.com_game-of-thrones-season-7-the-spoils-of-war-minimal-art_1920x1080.png);
+color:aliceblue;
+}
+
+
+img {
+width: 200px;
+height: 200px;
+border-radius: 10px;
+/* border: 10px ridge; */
+border-color: aliceblue
+
+};
+
+
+
+/* img.logo {
+width: 600px; 
+height: auto;
+} */
