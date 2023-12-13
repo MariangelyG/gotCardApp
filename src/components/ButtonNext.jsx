@@ -12,6 +12,7 @@ export const ButtonNext = ( { getRandomNumber } ) => {
           width: 230, 
           margin: "auto",
           backgroundColor:"#7D7D52",
+          border: "5px ridge #743A44",
           ":hover": {backgroundColor: "#403646"},
           
         }}

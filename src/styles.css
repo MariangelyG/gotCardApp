@@ -12,14 +12,20 @@ img {
 width: 200px;
 height: 200px;
 border-radius: 10px;
-/* border: 10px ridge; */
-border-color: aliceblue
-
-};
+border: 4px ridge #743A44;
 
 
+}
 
-/* img.logo {
-width: 600px; 
+b {
+
+margin-right: 5px;
+}
+
+
+
+img.logo {
+width: 450px; 
 height: auto;
-} */
+border: 0;
+}

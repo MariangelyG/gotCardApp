@@ -2,19 +2,22 @@ import { useFetch } from "../hooks/useFetch";
 import { Container, List, ListItem } from "@mui/material";
 import { ButtonNext } from "./ButtonNext";
 
+// Componente que recibe como props el id de los personajes y la funcion para generar numeros aleatorios.
 export const Card = ({ id, getRandomNumber }) => {
+  // Llamar el custom hook para obtener los datos de los persoanjes.
   const { character } = useFetch(
     `https://thronesapi.com/api/v2/Characters/${id}`
   );
 
   return (
     <>
+    {/* Logo de la serie */}
       <img
-       className= "logo"
+        className="logo"
         src="src\assets\Game-Of-Thrones-PNG-Images-HD.png"
         alt="image"
       />
-     
+    {/* Contenedor de imagen, lista y botón  */}
       <Container
         sx={{
           border: 3,
@@ -28,9 +31,9 @@ export const Card = ({ id, getRandomNumber }) => {
           opacity: 0.8,
           borderRadius: 2,
           boxShadow: "5px 5px 5px #FF9625",
-          // border: "10px ridge",
         }}
       >
+        {/* Lista con los datos de los personajes,  se usa el operador opcional (?) para evitar errores si el personaje no está definido.*/}
         {
           <List>
             <ListItem>
@@ -58,7 +61,7 @@ export const Card = ({ id, getRandomNumber }) => {
             </ListItem>
           </List>
         }
-
+        {/* El boton llama la funcion getTandomNumber para al hacer click genere un personaje aleatorio */}
         <ButtonNext getRandomNumber={getRandomNumber} />
       </Container>
     </>
